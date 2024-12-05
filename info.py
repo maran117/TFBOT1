@@ -26,8 +26,8 @@ TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
-PICS = (environ.get('PICS', '')).split()
-WELCOME_VID = environ.get("WELCOME_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
+PICS = (environ.get('PICS', 'https://graph.org/file/592d568b2a09e7fcf1188-d4c66150463a43f15e.jpg https://graph.org/file/2f8ee9efe81fd42092c1c-313f8e73b1b9e57b68.jpg https://graph.org/file/ffcfb1e9ef336fbcb4771-0c5a7560dc2c6f6b64.jpg https://graph.org/file/290bf9261d799ac5c4c97-cee65615a3c35617da.jpg https://graph.org/file/130fb8f60c2bf704e062a-a1d257ad63a70624ca.jpg https://graph.org/file/f871bd9f686ae1e1b4b04-58376f5518e51d599f.jpg https://graph.org/file/1d9b27c4d04131b93013b-e5a0edbab19697bef9.jpg')).split()
+WELCOME_VID = environ.get("WELCOME_VID", "https://envs.sh/KNL.mp4")
 
 #premium imag
 REFFER_PIC = environ.get('REFFER_PIC', 'https://graph.org/file/f75feb19aece0d4badefd.jpg')
