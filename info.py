@@ -50,7 +50,7 @@ OWNER_USER_NAME = environ.get("OWNER_USER_NAME", "TamilFlix_Admine_bot") # widou
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002457425264 -1002401488764').split()]
 # post channel auto post new movie
 POST_CHANNELS = list(map(int, (channel.strip() for channel in environ.get('POST_CHANNELS', '-1002480279086').split(','))))
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002023479054'))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1001692297236'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', '0'))
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
