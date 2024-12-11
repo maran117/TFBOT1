@@ -63,7 +63,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
 STREAM_API = (environ.get('STREAM_API', '645ea7db843cb1a5977267341cf8adb1873675f5'))
 STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/+4gvPwxUwq2o3Njc9'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), True)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
 
 
 #verify site api and url
