@@ -1780,8 +1780,8 @@ async def auto_filter(client, msg, spoll=False):
                 return
             if len(message.text) < 100:
                 search = message.text
-                m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
+                m=await message.reply_sticker(sticker="CAACAgQAAxkBAAIGE2dZDXuFLKFn24mWfmj51OFr04v1AAJuAAONG0YnBeBv_A3hPLceBA",
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝗣𝗟𝗘𝗔𝗦𝗘 𝗪𝗔𝗜𝗧", url=CHNL_LNK)]]))
                 search = search.lower()
                 find = search.split(" ")
                 search = ""
@@ -1800,8 +1800,8 @@ async def auto_filter(client, msg, spoll=False):
                 if not files:
                     await m.delete()
                     if settings["spell_check"]:
-                        ai_sts = await message.reply_sticker(sticker=f"CAACAgQAAxkBAAEq2R9mipkiW9ACyj7oQXznwKTPHqNCXQACkBUAA3mRUZGx4GwLX9XCHgQ")
-                        st=await message.reply('<b>Ai is Cheking For Your Spelling. Please Wait.</b>') 
+                        ai_sts = await message.reply_sticker(sticker=f"CAACAgUAAxkBAAIGFmdZDc9FpNUBzjRiaGfjVxZG6-HNAAKOEgACLHOJVR2wat7kHa8UHgQ")
+                        st=await message.reply('<b>✋Ai is Cheking For Your Spelling. Please Wait.</b>') 
                         is_misspelled = await ai_spell_check(chat_id = message.chat.id,wrong_name=search)
                         if is_misspelled:
                             await st.edit(f'<b>Ai Suggested <code>{is_misspelled}</code> name\nSo Im Searching for <code>{is_misspelled}</code></b>')
@@ -1820,8 +1820,8 @@ async def auto_filter(client, msg, spoll=False):
         else:
             message = msg.message.reply_to_message  # msg will be callback query
             search, files, offset, total_results = spoll
-            m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
+            m=await message.reply_sticker(sticker="CAACAgQAAxkBAAIGE2dZDXuFLKFn24mWfmj51OFr04v1AAJuAAONG0YnBeBv_A3hPLceBA",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝗣𝗟𝗘𝗔𝗦𝗘 𝗪𝗔𝗜𝗧", url=CHNL_LNK)]]))
             settings = await get_settings(message.chat.id)
         key = f"{message.chat.id}-{message.id}"
         temp.GETALL[key] = files
