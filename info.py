@@ -42,7 +42,7 @@ PREMIUM_LOGS = int(premium) if premium and id_pattern.search(premium) else None
 # lock file, set file limit 
 FILE_LIMITE = int(environ.get('FILE_LIMITE', 15))
 SEND_ALL_LIMITE = int(environ.get('SEND_ALL_LIMITE', 3))
-LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), True)
+LIMIT_MODE = is_enabled((environ.get('LIMIT_MODE', 'True')), False)
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7319462489').split()]
@@ -63,7 +63,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 STREAM_SITE = (environ.get('STREAM_SITE', 'instantlinks.co'))
 STREAM_API = (environ.get('STREAM_API', '645ea7db843cb1a5977267341cf8adb1873675f5'))
 STREAM_HTO = (environ.get('STREAMHTO', 'https://t.me/+4gvPwxUwq2o3Njc9'))
-STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), False)
+STREAM_MODE = is_enabled((environ.get('STREAM_MODE', "False")), True)
 
 
 #verify site api and url
@@ -103,7 +103,7 @@ AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 PM_FILTER = is_enabled((environ.get('PM_FILTER', "True")), False)
 
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
