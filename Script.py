@@ -207,8 +207,6 @@ Money heist S0E01
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating} / 10</a>
 ©️ Powered by: <b>{message.chat.title}
-<i><b>@TamilFlix_Mv {file_name}</b></i>
-
 </i><b><blockquote>📝 𝗔𝗻𝘆 𝗔𝗱𝘃𝗲𝗿𝘁𝗶𝘀𝗲𝗺𝗲𝗻𝘁  𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗡𝗼𝘄.👇 </blockquote>「<a href="https://t.me/TamilFlix_Admine_bot">𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐍𝐨𝐰 </a>」</b></b></b> """
     
     CHANNELS = """
