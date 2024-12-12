@@ -101,7 +101,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TamilFlix_Admine_bot')
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
-PM_FILTER = is_enabled((environ.get('PM_FILTER', "True")), False)
+PM_FILTER = is_enabled((environ.get('PM_FILTER', "False")), False)
 
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
